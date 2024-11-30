@@ -1,19 +1,21 @@
 # Online Learning Management System
 TABLE OF CONTENTS
+<br>
 1.Overwiew
 2.Features
 3.Technolofy Stack
 4.Prerequisites
-5.Project Structure
-6.Usage
-7.JDBC Implementation Notes
+5.Usage
+6.JDBC Implementation Notes
 <hr>
 1.<i>OVERWIEW</i>
+<br>
 An Online Learning Management System (LMS) is a software application designed to facilitate the administration,documentation,tracking,reporting,automation,and delivery of educational courses,training programs,or learning and development programs.Think of it as a digital classsroom that brings together learners,instructors,and course content in a centralized platform.It is web-based platform designed to facilitate the delivery,management,and tracking of educational content and activities.It provides a centralized space where educators,administrators,and learners interact for teaching and learning purposes.
 <br>
 Developed using Java for backend operations,JDBC for database interaction,and HTML/CSS/JavaScript for the frontened.
 <hr>
 2.<i>FEATURES</i>
+<br>
 <b>Admin</b>
  * User Management
    * Input: User details (name, email, role)
@@ -63,6 +65,7 @@ Developed using Java for backend operations,JDBC for database interaction,and HT
    * Functionality: Track and view course progress.
 <hr>
 3.<i>Technology Stack</i>
+<br>
 Layer            Technology
 Backend           Java , Spring Boot
 Frontened         HTML , CSS ,JavaScript
@@ -70,6 +73,7 @@ Database          MySQL
 Database Access   JDBC
 <hr>
 4.<i>Prerequisites</i>
+<br>
 Before setting up the project locally , ensure the following software is installed:
 1. Java Development Kit (JDK):Version 11 or later is required for the development and execution of the LMS application.
 2. Apache Maven:Used for dependency management and building the project.Simplifies the inclusion of required libraries and frameworks.
@@ -78,10 +82,8 @@ Before setting up the project locally , ensure the following software is install
 5. Integrated Development Environment (IDE):Options: IntelliJ IDEA, Eclipse, or any preferred Java IDE.Facilitates coding, debugging, and project management.
 ---
 <hr>
-5.<i>Project Structure</i>
-![WhatsApp Image 2024-12-01 at 03 44 36_743ff43a](https://github.com/user-attachments/assets/fe003922-6e07-4aad-bcd3-867ccbcedf7e)
-<hr>
-6.<i>Usage</i>
+5.<i>Usage</i>
+<br>
 <B>Admin</B>
 1. User Management:Displays a table listing all user accounts (students, instructors, admins).Options include creating, editing, and deleting users.
 2. Course Management:Displays all available courses in a table format.Admins can create new courses and edit or delete existing ones.
@@ -104,7 +106,8 @@ Before setting up the project locally , ensure the following software is install
 5. Feedback and Grades:Displays grades and feedback received for assignments, quizzes, and exams.
 ---
 <hr>
-7.<i>JDBC Implementation Notes</i>
+6.<i>JDBC Implementation Notes</i>
+<br>
 1. Database Connection:
  * The application uses Spring's JdbcTemplate for interaction with MySQL.
 2. SQL Queries:
