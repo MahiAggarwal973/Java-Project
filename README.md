@@ -1,4 +1,4 @@
-# Java-Project
+# Online Learning Management System
 TABLE OF CONTENTS
 1.Overwiew
 2.Features
@@ -14,6 +14,74 @@ An Online Learning Management System (LMS) is a software application designed to
 Developed using Java for backend operations,JDBC for database interaction,and HTML/CSS/JavaScript for the frontened.
 <hr>
 2.<i>FEATURES</i>
+<b>Admin</b>
+ * User Management
+   * Input: User details (name, email, role)
+   * Output: Confirmation message for successful user creation/update/deletion
+   * Functionality: Create, edit, or delete user accounts and manage user roles.
+ * Course Management
+   * Input: Course details (title, description, syllabus)
+   * Output: Confirmation message for successful course creation/update/deletion
+   * Functionality: Manage courses, including creation, editing, and deletion.
+ * Performance Analytics
+   * Input: Course and user performance data
+   * Output: Reports and visualizations
+   * Functionality: Analyze performance metrics and generate reports.
+ * System Settings
+   * Input: Configuration settings
+   * Output: Confirmation message for successful settings update
+   * Functionality: Manage system-wide settings.
+<b>Instructor</b>
+ * Course Creation
+   * Input: Course content, quizzes, assignments
+   * Output: Confirmation message for successful course creation
+   * Functionality: Create and manage course content.
+ * Assignment Grading
+   * Input: Student submissions
+   * Output: Grades and feedback
+   * Functionality: Grade assignments and provide feedback.
+ * Student Management
+   * Input: Student list
+   * Output: Student performance reports
+   * Functionality: Monitor student progress and performance.
+<b>Student</b>
+ * Course Enrollment
+   * Input: Course selection
+   * Output: Confirmation message for successful enrollment
+   * Functionality: Enroll in courses.
+ * Access Materials
+   * Input: Course materials
+   * Output: Access to materials
+   * Functionality: View and download course content.
+ * Submit Assignments
+   * Input: Assignment submissions
+   * Output: Confirmation message for successful submission
+   * Functionality: Submit assignments.
+ * Progress Tracking
+   * Input: Course progress
+   * Output: Progress reports
+   * Functionality: Track and view course progress.
+<hr>
+3.<i>Technology Stack</i>
+Layer            Technology
+Backend           Java , Spring Boot
+Frontened         HTML , CSS ,JavaScript
+Database          MySQL
+Database Access   JDBC
+<hr>
+4.<i>Prerequisites</i>
+Before setting up the project locally , ensure the following software is installed:
+1. Java Development Kit (JDK):Version 11 or later is required for the development and execution of the LMS application.
+2. Apache Maven:Used for dependency management and building the project.Simplifies the inclusion of required libraries and frameworks.
+3. MySQL:Version 8 or later is recommended for database management.It will store user data, courses, enrollments, assignments, and other entities.
+4. Git:A version control system used for cloning repositories and managing code changes.
+5. Integrated Development Environment (IDE):Options: IntelliJ IDEA, Eclipse, or any preferred Java IDE.Facilitates coding, debugging, and project management.
+---
+<hr>
+5.<i>Project Structure</i>
+![WhatsApp Image 2024-12-01 at 03 44 36_743ff43a](https://github.com/user-attachments/assets/fe003922-6e07-4aad-bcd3-867ccbcedf7e)
+<hr>
+6.<i>Usage</i>
 <B>Admin</B>
 1. User Management:Displays a table listing all user accounts (students, instructors, admins).Options include creating, editing, and deleting users.
 2. Course Management:Displays all available courses in a table format.Admins can create new courses and edit or delete existing ones.
@@ -36,22 +104,11 @@ Developed using Java for backend operations,JDBC for database interaction,and HT
 5. Feedback and Grades:Displays grades and feedback received for assignments, quizzes, and exams.
 ---
 <hr>
-3.<i>Technology Stack</i>
-Layer            Technology
-Backend           Java , Spring Boot
-Frontened         HTML , CSS ,JavaScript
-Database          MySQL
-Database Access   JDBC
-<hr>
-4.<i>Prerequisites</i>
-Before setting up the project locally , ensure the following software is installed:
-1. Java Development Kit (JDK):Version 11 or later is required for the development and execution of the LMS application.
-2. Apache Maven:Used for dependency management and building the project.Simplifies the inclusion of required libraries and frameworks.
-3. MySQL:Version 8 or later is recommended for database management.It will store user data, courses, enrollments, assignments, and other entities.
-4. Git:A version control system used for cloning repositories and managing code changes.
-5. Integrated Development Environment (IDE):Options: IntelliJ IDEA, Eclipse, or any preferred Java IDE.Facilitates coding, debugging, and project management.
----
-<hr>
-5.<i>Project Structure</i>
+7.<i>JDBC Implementation Notes</i>
+1. Database Connection:
+ * The application uses Spring's JdbcTemplate for interaction with MySQL.
+2. SQL Queries:
+ * Native SQL is used for CRUD operations, optimized for MySQL.
+
 
 
